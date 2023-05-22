@@ -81,6 +81,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
             }
             // Free the allocated memory
             free(content);
+            break;
         }
         if (wParam == ID_HOTKEY_OPEN)
         {
@@ -100,6 +101,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
                 MessageBox(hwnd, "Failed to open the file.", "Error", MB_OK | MB_ICONERROR);
                 return 0;
             }
+            break;
         }
         return 0;
     }
